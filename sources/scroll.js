@@ -30,8 +30,9 @@ page1Scroll = new iScroll('wrapper1', {hScrollbar: false, vScrollbar: false, loc
 
 window.addEventListener("orientationchange", function() {
 	alert('width='+$('.page').css('width')+' height='+$('.page').css('height'));
-	wrapperWidth = $('.page').css('height')+20;
-	alert('wrapperWidth='+wrapperWidth);
-	$('#pageScroller').css('width', wrapperWidth * 4);
-  	updateLayout();
+	settimeout(function(){
+		wrapperWidth = $('.page').css('width')+20;
+		$('#pageScroller').css('width', wrapperWidth * 4);
+  		updateLayout();
+	},1000);
 }, false);
