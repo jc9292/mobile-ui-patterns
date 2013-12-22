@@ -11,13 +11,6 @@ body {
     margin-top: 0px;
 }
 
-.page hr {
-    height: 2px;
-    background-color: #E6E7E8;
-    border: none;
-    border-bottom: solid 1px #FFFFFF;
-}
-
 .frame {
     position:absolute;
     top:80px;
