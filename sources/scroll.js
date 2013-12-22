@@ -13,13 +13,10 @@ var myScroll = new iScroll('pageWrapper', {
 updateLayout();
 
 function updateLayout() {
-
     var currentPage = 0;
-
     if (wrapperWidth > 0) {
         currentPage = - Math.ceil( $('#pageScroller').position().left / wrapperWidth);
     }
-
     wrapperWidth = $('#pageWrapper').width();
 
     $('#pageScroller').css('width', wrapperWidth * 4);
@@ -32,6 +29,6 @@ page3Scroll = new iScroll('wrapper3', {hScrollbar: false, vScrollbar: false, loc
 page1Scroll = new iScroll('wrapper1', {hScrollbar: false, vScrollbar: false, lockDirection: true });
 
 window.addEventListener("orientationchange", function() {
-  alert(window.orientation);
-  updateLayout();
+	wrapperWidth = $('#pageWrapper').width();
+  	updateLayout();
 }, false);
