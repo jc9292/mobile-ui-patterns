@@ -31,5 +31,6 @@ page1Scroll = new iScroll('wrapper1', {hScrollbar: false, vScrollbar: false, loc
 window.addEventListener("orientationchange", function() {
 	wrapperWidth = $('#pageWrapper').width();
 	alert('wrapperWidth='+wrapperWidth);
+	$('#pageScroller').css('width', wrapperWidth * 4);
   	updateLayout();
 }, false);
