@@ -4,7 +4,18 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-
+    <div id="header" style="display:block; width:100%; position:fixed; top:0px; z-index:990;">
+                <a href="#" class="toggle-menu menu-left button menu">Menu</a>
+                <a href="javascript:window.location.reload()" class="button reload"><img src="images/bt-reload2.png" width=14 height=18 alt="" /></a>
+                <a href="/" class="logo"><img id=logo1 src="images/logo-maxifoot-big.png" alt="Maxifoot" width=102 height=38 /></a>
+    </div>
+    <ul id="navigation" style="display:block; width:100%; position:fixed; top:42px; z-index:990; overflow:hidden; white-space:nowrap;">
+                <li id=m1><a href="#" onclick="goune();">La Une</a></li>
+                <li id=m2><a href="#" onclick="gobreves();">Brèves</a></li>
+                <li id=m3 style="padding:0 11px;"><a onclick="gopage('live');" href="#">Live</a></li>
+                <li id=m4><a onclick="gopage('resus');" href="#">Résult.</a></li>
+                <li id=m5><a href="/plus.htm" style="font-size:24px;">+</a></li>
+    </ul>
     <div class="frame">
 
         <div id="pageWrapper">
