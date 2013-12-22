@@ -20,7 +20,7 @@ function updateLayout() {
     wrapperWidth = $('#pageWrapper').width();
 
     $('#pageScroller').css('width', wrapperWidth * 4);
-    $('.page').css('width', wrapperWidth);
+    $('.page').css('width', wrapperWidth - 20);
     myScroll.refresh();
     myScroll.scrollToPage(currentPage, 0, 0);
 }
@@ -29,7 +29,7 @@ page3Scroll = new iScroll('wrapper3', {hScrollbar: false, vScrollbar: false, loc
 page1Scroll = new iScroll('wrapper1', {hScrollbar: false, vScrollbar: false, lockDirection: true });
 
 window.addEventListener("orientationchange", function() {
-	wrapperWidth = $('#pageWrapper').width();
+	wrapperWidth = $('.page').css('width')+20;
 	alert('wrapperWidth='+wrapperWidth);
 	$('#pageScroller').css('width', wrapperWidth * 4);
   	updateLayout();
