@@ -30,3 +30,8 @@ function updateLayout() {
 
 page3Scroll = new iScroll('wrapper3', {hScrollbar: false, vScrollbar: false, lockDirection: true });
 page1Scroll = new iScroll('wrapper1', {hScrollbar: false, vScrollbar: false, lockDirection: true });
+
+window.addEventListener("orientationchange", function() {
+  alert(window.orientation);
+  updateLayout();
+}, false);
