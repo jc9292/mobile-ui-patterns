@@ -32,7 +32,8 @@ body {
     float: left;
     -webkit-transform:translate3d(0,0,0);
     height: 100%;
-    padding: 20px;
+    width:100%;
+    padding:0px;
 }
 
 #pageWrapper {
@@ -60,5 +61,5 @@ body {
 	position:absolute; z-index:1;
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
 	width:100%;
-	padding:20px;
+	padding:0px;
 }
