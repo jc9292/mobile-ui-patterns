@@ -28,4 +28,5 @@ function updateLayout() {
     myScroll.scrollToPage(currentPage, 0, 0);
 }
 
-page3Scroll = new iScroll('wrapper', {hScrollbar: false, vScrollbar: false, lockDirection: true });
+page3Scroll = new iScroll('wrapper3', {hScrollbar: false, vScrollbar: false, lockDirection: true });
+page1Scroll = new iScroll('wrapper1', {hScrollbar: false, vScrollbar: false, lockDirection: true });
