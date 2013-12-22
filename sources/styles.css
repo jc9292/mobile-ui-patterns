@@ -38,10 +38,11 @@ body {
 #pageWrapper {
     position:absolute;
     z-index:1;
+    background:#ff0;
     overflow:hidden;
-    top:20px;
+    top:80px;
     right:20px;
-    bottom:20px;
+    bottom:40px;
     left:20px;
 }
 
