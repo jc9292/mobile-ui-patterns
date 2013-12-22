@@ -40,9 +40,9 @@ body {
     z-index:1;
     background:#ff0;
     overflow:hidden;
-    top:80px;
+    top:0px;
     right:20px;
-    bottom:40px;
+    bottom:0px;
     left:20px;
 }
 
