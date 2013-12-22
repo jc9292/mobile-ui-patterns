@@ -40,9 +40,9 @@ body {
     z-index:1;
     overflow:hidden;
     top:20px;
-    right:0px;
+    right:10px;
     bottom:20px;
-    left:0px;
+    left:10px;
 }
 
 #wrapper1, #wrapper3 {
