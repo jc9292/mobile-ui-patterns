@@ -28,6 +28,7 @@ function updateLayout() {
 var page3Scroll = new iScroll('wrapper3', {hScrollbar: false, vScrollbar: false, lockDirection: true });
 var page1Scroll = new iScroll('wrapper1', {hScrollbar: false, vScrollbar: false, lockDirection: true });
 function update1(){
+		alert('update');
 		alert($('.page').css('width'));
 		$('.page').css('width', $(document).width()+'px');
 		page1Scroll.refresh();
@@ -39,6 +40,7 @@ function update1(){
 window.addEventListener("orientationchange", function() {
 	settimeout(update1,1000);
 }, false);
-window.addEventListener("resize", function() {
-	settimeout(update1,1000);
-}, false);
+$(window).on('resize', function(){
+	alert('resize');
+   update1();
+});
