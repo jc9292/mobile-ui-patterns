@@ -35,7 +35,7 @@ function update1(){
 }
 $('#m4').click(go1);
 function go1() {
-	myScroll.scrollToElement('#p4',0);
+	myScroll.scrollToElement('#p4',1000);
 }
 
 $(window).on('resize', function(){
