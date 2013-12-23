@@ -30,8 +30,8 @@ var page1Scroll = new iScroll('wrapper1', {hScrollbar: false, vScrollbar: false,
 
 window.addEventListener("orientationchange", function() {
 	settimeout(function(){
-		alert($('.page').width());
-		$('.page').width( $(document).width()+'px');
+		alert($('.page').css('width'));
+		$('.page').css('width', $(document).width()+'px');
 		page1Scroll.refresh();
 		page3Scroll.refresh();
 		updateLayout();
