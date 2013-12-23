@@ -25,11 +25,13 @@ function updateLayout() {
     myScroll.scrollToPage(currentPage, 0, 0);
 }
 
-page3Scroll = new iScroll('wrapper3', {hScrollbar: false, vScrollbar: false, lockDirection: true });
-page1Scroll = new iScroll('wrapper1', {hScrollbar: false, vScrollbar: false, lockDirection: true });
+var page3Scroll = new iScroll('wrapper3', {hScrollbar: false, vScrollbar: false, lockDirection: true });
+var page1Scroll = new iScroll('wrapper1', {hScrollbar: false, vScrollbar: false, lockDirection: true });
 
 window.addEventListener("orientationchange", function() {
 	settimeout(function(){
-  		updateLayout();
-	},2000);
+  		myScroll.refresh();
+		page1Scroll.refresh();
+		page3Scroll.refresh();
+	},1000);
 }, false);
