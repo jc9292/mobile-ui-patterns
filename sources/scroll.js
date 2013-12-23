@@ -33,6 +33,11 @@ function update1(){
 		updateLayout();
 		myScroll.refresh();
 }
+$('#m4').click(go1);
+function go1() {
+	myScroll.scrollToElement('#p4',0);
+}
+
 $(window).on('resize', function(){
    update1();
 });
