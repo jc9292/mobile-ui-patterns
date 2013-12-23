@@ -38,6 +38,8 @@ function go1() {
 	$('#p2').css('display','none');
 	$('#p3').css('display','none');
 	myScroll.scrollToElement('#p4',1000);
+	$('#p2').css('display','block');
+	$('#p3').css('display','block');
 }
 
 $(window).on('resize', function(){
