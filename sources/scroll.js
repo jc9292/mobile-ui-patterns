@@ -26,6 +26,7 @@ function updateLayout() {
 }
 
 var page3Scroll = new iScroll('wrapper3', {hScrollbar: false, vScrollbar: false, lockDirection: true });
+var page2Scroll = new iScroll('wrapper2', {hScrollbar: false, vScrollbar: false, lockDirection: true });
 var page1Scroll = new iScroll('wrapper1', {hScrollbar: false, vScrollbar: false, lockDirection: true });
 function update1(){
 		$('.page').css('width', $(document).width()+'px');
