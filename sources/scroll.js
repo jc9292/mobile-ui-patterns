@@ -30,8 +30,10 @@ var page1Scroll = new iScroll('wrapper1', {hScrollbar: false, vScrollbar: false,
 
 window.addEventListener("orientationchange", function() {
 	settimeout(function(){
-  		myScroll.refresh();
 		page1Scroll.refresh();
 		page3Scroll.refresh();
+		updateLayout();
+		myScroll.refresh();
+		updateLayout();
 	},1000);
 }, false);
