@@ -35,6 +35,8 @@ function update1(){
 }
 $('#m4').click(go1);
 function go1() {
+	$('#p2').css('display','none');
+	$('#p3').css('display','none');
 	myScroll.scrollToElement('#p4',1000);
 }
 
