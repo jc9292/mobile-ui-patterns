@@ -30,8 +30,6 @@ var page2Scroll = new iScroll('wrapper2', {hScrollbar: false, vScrollbar: false,
 var page1Scroll = new iScroll('wrapper1', {hScrollbar: false, vScrollbar: false, lockDirection: true });
 function update1(){
 		$('.page').css('width', $(document).width()+'px');
-		page1Scroll.refresh();
-		page3Scroll.refresh();
 		updateLayout();
 		myScroll.refresh();
 }
